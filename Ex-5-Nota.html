@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de examen</title>
+</head>
+
+<body>
+    <script>
+        let nota = prompt("Dime la nota de tu examen: ");
+        let texto = "";
+        if (nota < 5) {
+            texto = "¡Ohhh, lo siento! Has suspendido.";
+        } else {
+            texto = "¡Enhorabuena! ¡has aprobado, campeón!";
+        }
+        window.alert(texto);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llistat</title>
+</head>
+
+<body>
+    <h2>Llistat d'objectes</h2>
+    <button onclick="llista()">Fes click per obtindre la llista</button>
+    <br>
+    <h4 id="objectes"></h4>
+    <script>
+        function llista() {
+            // variable per mostrar el resultat final
+            let text = "";
+            // Genera llista de paraules en un arrai
+            let paraules = ["taula", "cadira", "ordinador", "llibreta"];
+            // mostra la posició de cada una dintre de la llista
+            for (i = 0; i < paraules.length; i++) {
+                text += "L'objecte " + paraules[i].toUpperCase() + " és a la posició " + (i+1) + ". <br>";
+                document.getElementById('objectes').innerHTML = text;
+            }
+        }
+    </script>
+</body>
+
+</html>

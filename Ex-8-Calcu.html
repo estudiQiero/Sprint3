@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+</head>
+
+<body>
+    <h2>Calculadora!</h2>
+    <button onclick="calculadora()">Fes click per iniciar el calcul</button>
+    <script>
+        function calculadora(operador, valor1, valor2) {
+
+            valor1 = prompt("Introduce el primer valor");
+            operador = prompt("Introduce el operador para tu cálculo \\(+ | - | *\\)");
+            valor2 = prompt("Introduce el segundo valor");
+
+            switch (operador) {
+                // suma
+                case "+":
+                    resultat = parseInt(valor1) + parseInt(valor2);
+                    break;
+                // resta
+                case "-":
+                    resultat = valor1 - valor2;
+                    break;
+                // multiplicació
+                case "*":
+                    resultat = valor1 * valor2;
+            }
+
+            window.alert("El resultado de tu cálculo es: " + resultat);
+        }
+    </script>
+</body>
+
+</html>

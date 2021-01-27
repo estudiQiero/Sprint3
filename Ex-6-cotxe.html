@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotxes</title>
+</head>
+
+<body>
+    <h1 id="text">Tengo un coche de color <span id="color" style="color:red">rojo</span></h1>
+    <input type="button" onclick="colour()" value="cambia el color">
+    <input type="button" onclick="letras()" value="cambia las os">
+    <script>
+        // Canvia el color i la paraula azul
+        function colour() {
+            document.getElementById("color").style.color = "green";
+            document.getElementById("color").innerHTML = "verde";
+        }
+
+        // Canvia totes les "o" a "i"
+        function letras() {
+            // Definim variable de frase
+            let frase = "";
+            // captura el valor de h1
+            frase = document.getElementById('text').textContent;
+            // Aquesta opció em reemplaça les lletres o per a, però no actúa sobre les majúscules.
+            let resultat = frase.replace(/o/g, 'a');
+            //mostra el resultat
+            document.getElementById("text").innerHTML = resultat;
+        }
+    </script>
+</body>
+
+</html>
