@@ -20,9 +20,10 @@
             let paraules = ["taula", "cadira", "ordinador", "llibreta"];
             // mostra la posició de cada una dintre de la llista
             for (i = 0; i < paraules.length; i++) {
-                text += "L'objecte " + paraules[i].toUpperCase() + " és a la posició " + (i+1) + ". <br>";
-                document.getElementById('objectes').innerHTML = text;
+                // text += "L'objecte " + paraules[i].toUpperCase() + " és a la posició " + (i+1) + ". <br>";
+                text += "L'objecte " ${paraules[i].toUpperCase()} "és a la posició " ${i + 1} + "<br>";
             }
+            document.getElementById('objectes').innerHTML = text;
         }
     </script>
 </body>

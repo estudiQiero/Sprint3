@@ -9,14 +9,18 @@
 
 <body>
     <script>
-        let nota = prompt("Dime la nota de tu examen: ");
-        let texto = "";
-        if (nota < 5) {
-            texto = "¡Ohhh, lo siento! Has suspendido.";
-        } else {
-            texto = "¡Enhorabuena! ¡has aprobado, campeón!";
-        }
-        window.alert(texto);
+        // let nota = prompt("Dime la nota de tu examen: ");
+        // let texto = "";
+        // if (nota < 5) {
+        //     texto = "¡Ohhh, lo siento! Has suspendido.";
+        // } else {
+        //     texto = "¡Enhorabuena! ¡has aprobado, campeón!";
+        // }
+        // window.alert(texto);
+
+        const nota = prompt("Dime la nota de tu examen: ");
+        alert(nota < 5 ? "¡Ohhh, lo siento! Has suspendido." : "¡Enhorabuena! ¡has aprobado, campeón!");
+
     </script>
 </body>
 
